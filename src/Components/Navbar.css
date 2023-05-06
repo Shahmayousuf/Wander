@@ -1,0 +1,56 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.navbar{
+    width: auto;
+    height:auto ;
+ background-color: antiquewhite;
+}
+  .navbar-container{
+      width: 100%;
+    height: auto;
+    display: flex;
+     justify-content: space-between;
+    
+  }
+  .wander-logoicon{
+       display: flex;
+       align-items: center;
+       justify-content: center;
+    padding: 10px;
+       
+  }
+  .wander-logoicon h3{
+     font-weight: bold;
+     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
+  }
+  .wander-logoicon img{
+    height: 60px;
+    width: 100px;
+  }
+  .navs{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 20px;
+    
+  
+}
+.navs a{
+    text-decoration: none;
+    color: black;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+}
+/* .navs button{
+    width: 90px;
+    border: none;
+    border-radius: 5px;
+    background-color: burlywood;
+    font-weight: bold;
+} */
+  
