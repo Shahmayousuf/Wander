@@ -1,29 +1,61 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import passenger from "../pictures/passenger.png";
+// import passenger from "../pictures/passenger.png";
 import "./Navbar.css";
-import { Col, Row } from "react-bootstrap";
+import Button from "./Button";
+// import './Button.css'
+// import { Col, Row } from "react-bootstrap";
+
 const Navbar = () => {
+  const [click, setClick] = useState(false);
+  const[button,setButton]=useState(true)
+  const handleClick=()=>{
+    setClick(!click)
+  }
+  
+  const closeMobileMenu=()=>{
+    setClick(false)
+  }
+
+   const ShowButton=()=>{
+   if(window.innerWidth<=960){
+    setButton(false)
+   }
+    else{
+      setButton(true)
+    
+   }
+  }
+  window.addEventListener('resize',ShowButton)
   return (
     <>
-    <Row className="navbar">
-    <Col lg='6'>
-      <div className="navbar-container">
-        <div className="wander-logoicon">
-          <h3>WANDER</h3>
-          <img src={passenger} alt="icon" />
+      <nav className="navbar">
+        <div className="navbar-container">
+          <div className="navbar-logo">
+            Wander <i class="fab fa-typo3"></i>
+          </div>
+           <div className="menu-icon" onClick={handleClick}>
+            <i className={click ? 'fas fa-times':'fas fa-bars'}></i>
+           </div>
+           <ul className={click?'nav-menu active':'nav-menu'}>
+             <li className="nav-item">
+              <Link to='/' className="nav-links" onClick={closeMobileMenu}>Home</Link>
+             </li>
+             <li className="nav-item">
+              <Link to='/' className="nav-links" onClick={closeMobileMenu}>Services</Link>
+             </li>
+             
+             <li className="nav-item">
+              <Link to='' className="nav-links" onClick={closeMobileMenu}>Products</Link>
+             </li>
+             <li className="nav-item">
+              <Link to='' className="nav-links-mobile" onClick={closeMobileMenu}>SignUp</Link>
+             </li>
+           </ul>
+           {button&& <Button buttonStyle='btn--outline'>SIGN UP</Button>}
         </div>
-      </div>
-    </Col>
-    <Col lg='6'>
-      <div className="navs">
-        <a href="/">Home</a>
-        <a href="/services">Services</a>
-        <a href="/products">Products</a>
-      </div>
-    </Col>
-  </Row>
-  </>
+      </nav>
+    </>
   );
 };
 
