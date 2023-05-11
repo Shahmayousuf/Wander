@@ -1,6 +1,6 @@
 .cards {
     padding: 4rem;
-    background: #fff;
+    background: #ffffff;
   }
   
   h1 {
@@ -9,7 +9,8 @@
   
   .cards__container {
     display: flex;
-    flex-flow: column;
+    flex-wrap: wrap;
+    /* flex-direction: column; */
     align-items: center;
     max-width: 1120px;
     width: 90%;
@@ -26,7 +27,8 @@
   }
   
   .cards__item {
-    display: flex;
+    display: flex ;
+    list-style: none;
     flex: 1;
     margin: 0 1rem;
     border-radius: 10px;
@@ -99,11 +101,11 @@
     line-height: 24px;
   }
   
-  @media only screen and (min-width: 1200px) {
+   @media only screen and (min-width: 1200px) {
     .content__blog__container {
       width: 84%;
     }
-  }
+  } 
   
   @media only screen and (min-width: 1024px) {
     .cards__items {
@@ -113,7 +115,7 @@
   
   @media only screen and (max-width: 1024px) {
     .cards__item {
-      margin-bottom: 2rem;
+      margin-bottom: 4rem;
     }
   }
-  
+ 

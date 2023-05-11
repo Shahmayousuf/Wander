@@ -7,7 +7,7 @@ import Card from '../Components/Card'
 const Home = () => {
   return (
     <div>
-      <Navbar/>
+      
      <Herosection/>
      <Card/>
     </div>
