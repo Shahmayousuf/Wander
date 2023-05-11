@@ -1,10 +1,10 @@
-import React, { useState } from "react";
-import { Link } from "react-router-dom";
-// import passenger from "../pictures/passenger.png";
+import React, { useState,useEffect } from "react";
+import { Link } from "react-router-dom"
 import "./Navbar.css";
-import Button from "./Button";
-// import './Button.css'
-// import { Col, Row } from "react-bootstrap";
+import { Button } from "./Button";
+// import Button from "./Button";
+
+
 
 const Navbar = () => {
   const [click, setClick] = useState(false);
@@ -26,12 +26,16 @@ const Navbar = () => {
     
    }
   }
+  useEffect(()=>{
+   ShowButton()
+  },[])
   window.addEventListener('resize',ShowButton)
+
   return (
     <>
-      <nav className="navbar">
+      <nav  className="navbar" id="navbar">
         <div className="navbar-container">
-          <div className="navbar-logo">
+          <div className="navbar-logo" onClick={closeMobileMenu}>
             Wander <i class="fab fa-typo3"></i>
           </div>
            <div className="menu-icon" onClick={handleClick}>
@@ -42,7 +46,7 @@ const Navbar = () => {
               <Link to='/' className="nav-links" onClick={closeMobileMenu}>Home</Link>
              </li>
              <li className="nav-item">
-              <Link to='/' className="nav-links" onClick={closeMobileMenu}>Services</Link>
+              <Link to='' className="nav-links" onClick={closeMobileMenu}>Services</Link>
              </li>
              
              <li className="nav-item">
@@ -52,7 +56,7 @@ const Navbar = () => {
               <Link to='' className="nav-links-mobile" onClick={closeMobileMenu}>SignUp</Link>
              </li>
            </ul>
-           {button&& <Button buttonStyle='btn--outline'>SIGN UP</Button>}
+           {button && <Button buttonStyle='btn--outline'>SIGN UP</Button>}
         </div>
       </nav>
     </>
