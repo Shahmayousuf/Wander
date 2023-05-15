@@ -6,7 +6,7 @@ video {
   z-index: -1;
 }
 .hero-container {
-  /* background: url('/Images/img-home.jpg') center center/cover
+  /* background: url('Images/img-home.jpg') center center/cover
     no-repeat; */
   height: 100vh;
   width: 100%;
@@ -16,6 +16,10 @@ video {
   box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.2);
   object-fit: contain;
 }
+.fstpara{
+  margin-top: 100px;
+  text-align: center;
+}
 .hero-container h1 {
   color: white;
   font-size: 50px;
@@ -23,6 +27,7 @@ video {
   font-family: Georgia, "Times New Roman", Times, serif;
 }
 .hero-container p {
+
   font-size: 32px;
   color: white;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
@@ -31,6 +36,8 @@ video {
 
 .hero-btns {
   display: flex;
+  align-items: center;
+  justify-content: center;
   gap: 10px;
 
 }

@@ -8,9 +8,10 @@ const Herosection = () => {
   return (
     <div className="hero-container">
       <video src="/Vedio/video-1.mp4" autoPlay loop muted />
+      <div className="fstpara">
       <h1>ADVENTURE AWAITS</h1>
       <p>What are you waiting for?</p>
-
+      
       <div className="hero-btns">
         <Button
           className="btn"
@@ -26,6 +27,7 @@ const Herosection = () => {
         >
           WATCH LATER<i className="far fa-play-circle"></i>
         </Button>
+        </div>
         {/* <button className='btn btn--primary btn--large'>WATCH LATER</button> */}
       </div>
     </div>

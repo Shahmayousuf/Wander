@@ -8,6 +8,8 @@ import {
     MDBRow,
     MDBBtn
   } from 'mdb-react-ui-kit';
+//   import Tooltip from '@mui/material/Tooltip';
+
   
 const Footer = () => {
   return (
@@ -24,7 +26,9 @@ const Footer = () => {
           </MDBBtn>
 
           <MDBBtn outline color="light" floating className='m-1' href='#!' role='button'>
+          
             <MDBIcon fab icon='twitter' />
+            
           </MDBBtn>
 
           <MDBBtn outline color="light" floating className='m-1' href='#!' role='button'>
@@ -49,7 +53,8 @@ const Footer = () => {
             <MDBRow className='d-flex justify-content-center'>
               <MDBCol size="auto">
                 <p className='pt-2'>
-                  <strong>Sign up for our newsletter</strong>
+                  <strong>Sign up for our newsletter
+                 </strong>
                 </p>
               </MDBCol>
 
@@ -68,117 +73,116 @@ const Footer = () => {
 
         <section className='mb-4'>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt distinctio earum repellat quaerat
-            voluptatibus placeat nam, commodi optio pariatur est quia magnam eum harum corrupti dicta, aliquam
-            sequi voluptate quas.
+          Join the Adventure newsletter to receive our best vacation deals
           </p>
         </section>
 
         <section className=''>
+            
           <MDBRow>
             <MDBCol lg='3' md='6' className='mb-4 mb-md-0'>
-              <h5 className='text-uppercase'>Links</h5>
+              <h5 className='text-uppercase'>About Us</h5>
 
               <ul className='list-unstyled mb-0'>
                 <li>
                   <a href='#!' className='text-white'>
-                    Link 1
+                     How it works
                   </a>
                 </li>
                 <li>
                   <a href='#!' className='text-white'>
-                    Link 2
+                    Testinmonals
                   </a>
                 </li>
                 <li>
                   <a href='#!' className='text-white'>
-                    Link 3
+                    Career
                   </a>
                 </li>
                 <li>
                   <a href='#!' className='text-white'>
-                    Link 4
+                    Terms of Services
                   </a>
                 </li>
               </ul>
             </MDBCol>
 
             <MDBCol lg='3' md='6' className='mb-4 mb-md-0'>
-              <h5 className='text-uppercase'>Links</h5>
+              <h5 className='text-uppercase'>Contact Us</h5>
 
               <ul className='list-unstyled mb-0'>
                 <li>
                   <a href='#!' className='text-white'>
-                    Link 1
+                    Contact
                   </a>
                 </li>
                 <li>
                   <a href='#!' className='text-white'>
-                    Link 2
+                    Support
                   </a>
                 </li>
                 <li>
                   <a href='#!' className='text-white'>
-                    Link 3
+                    Destination
                   </a>
                 </li>
                 <li>
                   <a href='#!' className='text-white'>
-                    Link 4
+                    Sponsorships
                   </a>
                 </li>
               </ul>
             </MDBCol>
 
             <MDBCol lg='3' md='6' className='mb-4 mb-md-0'>
-              <h5 className='text-uppercase'>Links</h5>
+              <h5 className='text-uppercase'>Videos</h5>
 
               <ul className='list-unstyled mb-0'>
                 <li>
                   <a href='#!' className='text-white'>
-                    Link 1
+                    Submit video
                   </a>
                 </li>
                 <li>
                   <a href='#!' className='text-white'>
-                    Link 2
+                Ambassadors
                   </a>
                 </li>
                 <li>
                   <a href='#!' className='text-white'>
-                    Link 3
+                    Agency
                   </a>
                 </li>
                 <li>
                   <a href='#!' className='text-white'>
-                    Link 4
+                    Influencer
                   </a>
                 </li>
               </ul>
             </MDBCol>
 
             <MDBCol lg='3' md='6' className='mb-4 mb-md-0'>
-              <h5 className='text-uppercase'>Links</h5>
+              <h5 className='text-uppercase'>Social Media</h5>
 
               <ul className='list-unstyled mb-0'>
                 <li>
                   <a href='#!' className='text-white'>
-                    Link 1
+                    Instagram
                   </a>
                 </li>
                 <li>
                   <a href='#!' className='text-white'>
-                    Link 2
+                    Facebook
                   </a>
                 </li>
                 <li>
                   <a href='#!' className='text-white'>
-                    Link 3
+                    Youtube
                   </a>
                 </li>
                 <li>
                   <a href='#!' className='text-white'>
-                    Link 4
+                    Twitter
                   </a>
                 </li>
               </ul>
@@ -188,10 +192,8 @@ const Footer = () => {
       </MDBContainer>
 
       <div className='text-center p-3' style={{ backgroundColor: 'rgba(0, 0, 0, 0.2)' }}>
-        © 2020 Copyright:
-        <a className='text-white' href='https://mdbootstrap.com/'>
-          MDBootstrap.com
-        </a>
+        © 2023 WANDER
+       
       </div>
     </MDBFooter>
       
