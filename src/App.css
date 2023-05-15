@@ -24,6 +24,8 @@
     color: #fff;
     font-size: 100px;
     position: relative;
+    height: auto;
+    padding: 100px;
   }
   
   .products {
@@ -42,4 +44,6 @@
     background-repeat: no-repeat;
     color: #fff;
     font-size: 100px;
+    
+    
   }
