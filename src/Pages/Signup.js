@@ -1,9 +1,10 @@
 import React from 'react'
-
+import SignUPform from '../Components/SignUPform'
+import './Signup.css'
 const Signup = () => {
   return (
-    <div>
-      <h1 className='sign-up '>SIGN_UP</h1>
+    <div className='sign-up '>
+     <SignUPform />
     </div>
   )
 }
