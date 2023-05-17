@@ -1,0 +1,41 @@
+.product-card{
+    /* height: auto;
+    width: auto; */
+    display: flex;
+    gap: 15px;
+    
+    
+}
+.productcard{
+    width: 100%;
+    height: auto;
+    
+    
+}
+.card{
+background-color: rgb(241, 232, 232);
+height: 450px;
+overflow: hidden;
+}
+.title{
+    color: black;
+}
+.images{
+    height: 200px;
+    transition: all 0.5s ease-in-out;
+}
+.images:hover{
+    transform: scale(1.1);
+}
+@media screen and (max-width:768px){
+    .product-card{
+        display: flex;
+   flex-direction: column;
+        
+    }
+    .card{
+       width: 350px;
+
+    }
+   
+}

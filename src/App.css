@@ -14,7 +14,9 @@
     align-items: center;
     justify-content: center;
     font-size: 3rem;
-    /* height: auto; */
+    height: auto;
+    padding: 100px;
+
   }
   
   .services {
